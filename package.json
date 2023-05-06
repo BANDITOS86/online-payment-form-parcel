@@ -1,0 +1,20 @@
+{
+  "name": "form",
+  "description": "Online payment form",
+  "private": "true",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Alexsandr Valentinov",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "card-validator": "^8.1.1",
+    "email-validator": "^2.0.4",
+    "inputmask": "^5.0.8",
+    "redom": "^3.29.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
