@@ -594,6 +594,7 @@ const formCard = (0, _createFormJs.createPayForm)();
 (0, _redom.mount)(window.document.body, container);
 (0, _redom.mount)(container, formCard.form);
 let imageElement;
+let _isValid;
 function createDataValidAtributeFalse(input) {
     input.setAttribute("data-valid", false);
     _isValid = input.dataset.valid;
