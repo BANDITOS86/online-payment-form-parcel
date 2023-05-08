@@ -4,8 +4,8 @@
   "private": "true",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+    "build": "parcel build index.html --public-url ./ --no-cache",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Alexsandr Valentinov",
   "dependencies": {

@@ -24,6 +24,7 @@ mount(window.document.body, container);
 mount(container, formCard.form);
 
 let imageElement;
+let _isValid;
 
 function createDataValidAtributeFalse(input) {
   input.setAttribute('data-valid', false);
