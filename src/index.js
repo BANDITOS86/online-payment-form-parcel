@@ -58,7 +58,7 @@ function createImageLogoPaySystem(srcImage) {
   });
 }
 
-function getDataIntput() {
+function getDataInput() {
   let cardNumberData = formCard.cardNumberInput.dataset.valid;
   let cardExpirationDateData = formCard.cardExpirationDateInput.dataset.valid;
   let cardCvcCvvData = formCard.cardCvcCvvInput.dataset.valid;
@@ -79,11 +79,11 @@ formCard.cardNumberInput.addEventListener('blur', () => {
     imageElement?.remove();
     showErrorMessage(formCard.cardNumberErrorMessage, formCard.cardNumberInput);
     createDataValidAtributeFalse(formCard.cardNumberInput);
-    getDataIntput();
+    getDataInput();
   } else {
     hideErrorMessage(formCard.cardNumberErrorMessage, formCard.cardNumberInput);
     createDataValidAtributeTrue(formCard.cardNumberInput);
-    getDataIntput();
+    getDataInput();
   }
 
   if (numberValidation.card) {
@@ -180,14 +180,14 @@ formCard.cardExpirationDateInput.addEventListener('blur', () => {
       formCard.cardExpirationDateInput
     );
     createDataValidAtributeFalse(formCard.cardExpirationDateInput);
-    getDataIntput();
+    getDataInput();
   } else {
     hideErrorMessage(
       formCard.cardExpirationDateErrorMessage,
       formCard.cardExpirationDateInput
     );
     createDataValidAtributeTrue(formCard.cardExpirationDateInput);
-    getDataIntput();
+    getDataInput();
   }
 });
 
@@ -197,11 +197,11 @@ formCard.cardCvcCvvInput.addEventListener('blur', () => {
   if (!cardCvcCvv.isValid) {
     showErrorMessage(formCard.cardCvcCvvErrorMessage, formCard.cardCvcCvvInput);
     createDataValidAtributeFalse(formCard.cardCvcCvvInput);
-    getDataIntput();
+    getDataInput();
   } else {
     hideErrorMessage(formCard.cardCvcCvvErrorMessage, formCard.cardCvcCvvInput);
     createDataValidAtributeTrue(formCard.cardCvcCvvInput);
-    getDataIntput();
+    getDataInput();
   }
 });
 
@@ -211,11 +211,11 @@ formCard.cardEmailInput.addEventListener('blur', () => {
   if (emailValid !== true) {
     showErrorMessage(formCard.cardEmailErrorMessage, formCard.cardEmailInput);
     createDataValidAtributeFalse(formCard.cardEmailInput);
-    getDataIntput();
+    getDataInput();
   } else {
     hideErrorMessage(formCard.cardEmailErrorMessage, formCard.cardEmailInput);
     createDataValidAtributeTrue(formCard.cardEmailInput);
-    getDataIntput();
+    getDataInput();
   }
 });
 
